@@ -1,0 +1,11 @@
+INSERT INTO users (fisrt_name, last_name) VALUES ('Homer', 'Simpson');
+INSERT INTO users (fisrt_name, last_name) VALUES ('March', 'Simpson');
+INSERT INTO users (fisrt_name, last_name) VALUES ('Bart', 'Simpson');
+INSERT INTO users (fisrt_name, last_name) VALUES ('Lisa', 'Simpson');
+INSERT INTO users (fisrt_name, last_name) VALUES ('Maggi', 'Simpson');
+
+INSERT INTO passports (passports_number, city_of_registration, fk_passports_users) VALUES (11111, 'Springfild', 1);
+INSERT INTO passports (passports_number, city_of_registration, fk_passports_users) VALUES (22222, 'Springfild', 2);
+INSERT INTO passports (passports_number, city_of_registration, fk_passports_users) VALUES (33333, 'Springfild', 3);
+INSERT INTO passports (passports_number, city_of_registration, fk_passports_users) VALUES (44444, 'Springfild', 4);
+INSERT INTO passports (passports_number, city_of_registration, fk_passports_users) VALUES (55555, 'Springfild', 5);

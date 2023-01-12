@@ -1,0 +1,5 @@
+SELECT * FROM users;
+SELECT id, fisrt_name FROM users;
+SELECT * FROM passports;
+SELECT passports_number FROM passports;
+SELECT users.fisrt_name, passports.passports_number FROM users, passports WHERE passports.fk_passports_users = users.id;
