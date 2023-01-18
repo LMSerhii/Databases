@@ -26,6 +26,7 @@ for value in coll.find(query, {"_id": 0, "status": 1, "user": 1}):
 
 print("-" * 30)
 
+# # возвращает то что начинается на букву и ниже по алфавиту
 query = {"user": {"$gt": "S"}}
 for value in coll.find(query, {"_id": 0, "status": 1, "user": 1}):
     print(value)

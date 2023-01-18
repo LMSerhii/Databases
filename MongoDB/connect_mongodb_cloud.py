@@ -5,7 +5,6 @@ import datetime
 from mongo_auth import user, password
 
 uri = f"mongodb+srv://{user}:{password}@cluster0.lmgyayr.mongodb.net/?retryWrites=true&w=majority"
-
 try:
     client = pymongo.MongoClient(uri)
     db = client.testdata
