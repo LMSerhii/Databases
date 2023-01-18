@@ -32,6 +32,7 @@ for i in range(20):
 # coll.update_one(current, new_data)
 
 # удаление по индексу
+# удаляет последний элемент в списке, 1 это True 
 # current = {"_id": 1}
 # new_data = {"$pop": {"arrage": 1}}
 # coll.update_one(current, new_data)
