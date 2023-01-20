@@ -19,25 +19,31 @@ try:
         with connection.cursor() as cursor:
             # cursor.execute("SHOW DATABASES;")
             # print(cursor.fetchall())
+
+            # cursor.execute("SHOW TABLES;")
+            # print(cursor.fetchall())
             
-            # create_table_query = "CREATE TABLE `customers`(\
-            #         `id` int(11) AUTO_INCREMENT,\
-            #         `name` varchar(32),\
-            #         `password` varchar(32),\
-            #         `email` varchar(32),\
-            #         PRIMARY KEY (`id`)\
-            #         );"
-            # create_table_query = "CREATE TABLE `users` (\
-            #         `id` int(11) NOT NULL AUTO_INCREMENT,\
-            #         `email` varchar(255) COLLATE utf8_bin NOT NULL,\
-            #         `password` varchar(255) COLLATE utf8_bin NOT NULL,\
-            #         PRIMARY KEY (`id`)\
-            #         );"
+            # create_table_query = """CREATE TABLE `customers`(
+            #                         `id` int(11) AUTO_INCREMENT,
+            #                         `name` varchar(32),
+            #                         `password` varchar(32),
+            #                         `email` varchar(32),
+            #                         PRIMARY KEY (`id`)
+            #                         );"""
+            # cursor.execute(create_table_query)
+            # print("Table created successfully")
+
+            # create_table_query = """CREATE TABLE `users` (
+            #                         `id` int(11) NOT NULL AUTO_INCREMENT,
+            #                         `email` varchar(255) COLLATE utf8_bin NOT NULL,
+            #                         `password` varchar(255) COLLATE utf8_bin NOT NULL,
+            #                         PRIMARY KEY (`id`)
+            #                         );"""
             # cursor.execute(create_table_query)
             # print("Table created successfully")
       
-            # insert_query = "INSERT INTO `customers` (name, password, email) \
-            #         VALUES ('Serhii', 'qwerty', 'serhii@gmail.com');"
+            # insert_query = """INSERT INTO `customers` (name, password, email)
+            #                   VALUES ('Serhii', 'qwerty', 'serhii@gmail.com');"""
             # cursor.execute(insert_query)
             # connection.commit()
 
@@ -65,9 +71,3 @@ except Exception as ex:
     print("Connection refused ...")
     print(ex)
 
-""" 
-if return exception, try install
-pip install cryptography
-or 
-python3 -m pip install PyMySQL[rsa] 
-"""
